@@ -83,7 +83,7 @@ Vendingmachine ven = new Vendingmachine();
 	public ActionListener ListGame = new ActionListener(){
     public void actionPerformed(ActionEvent e){
     	// 按重來鈕
-    	if(e.getSource() == btnCola){
+    	/*if(e.getSource() == btnCola){
           ven.pay(coin.getTotalmoney());
           lblPlay.setText("請出拳...");
           lblPlay.setIcon(new ImageIcon(""));
@@ -97,7 +97,7 @@ Vendingmachine ven = new Vendingmachine();
 	      btnBottlewater.addActionListener(ListGame);
 	      btnRedtea.addActionListener(ListGame);
 	      btnGreentea.addActionListener(ListGame);
-       }
+       }*/
         // 按剪刀鈕
        if(e.getSource() == btnBottlewater){
     	   drink.setBottlewaterQuantity(drink.getBottlewaterQuantity(), 1);

@@ -3,7 +3,13 @@ package auto;
 public class Drink {
     private String name;
     private int price;
-    private int quantity;
+    private int Bottlewaterquantity=50;
+    private int Redteaquantity=50;
+    private int Greenteaquantity=50;
+    private int Colaquantity=50;
+    private int Sarsiquantity=50;
+    private int Coffeequantity=50;
+    
 
     public String getName() {
         return name;
@@ -23,57 +29,51 @@ public class Drink {
     
 
     public int getBottlewaterQuantity() {
-        return quantity;
+        return Bottlewaterquantity;
     }
 
-    public void setBottlewaterQuantity(int quantity,int bought) {
-    	quantity=50;
-    	this.quantity -= bought;
+    public void setBottlewaterQuantity(int Bottlewaterquantity,int bought) {
+    	this.Bottlewaterquantity -= 1;
     }
     
     public int getRedteaQuantity() {
-        return quantity;
+        return Redteaquantity;
     }
 
-    public void setRedteaQuantity(int quantity,int bought) {
-    	quantity=50;
-    	this.quantity -= bought;
+    public void setRedteaQuantity(int Redteaquantity,int bought) {
+    	this.Redteaquantity -= 1;
     }
     
     public int getGreenteaQuantity() {
-        return quantity;
+        return Greenteaquantity;
     }
 
-    public void setGreenteaQuantity(int quantity,int bought) {
-    	quantity=50;
-    	this.quantity -= bought;
+    public void setGreenteaQuantity(int Greenteaquantity,int bought) {
+    	this.Greenteaquantity -= 1;
     }
     
     public int getColaQuantity() {
-        return quantity;
+        return Colaquantity;
     }
 
-    public void setColaQuantity(int quantity,int bought) {
-    	quantity=50;
-    	this.quantity -= bought;
+    public void setColaQuantity(int Colaquantity,int bought) {
+    	this.Colaquantity -= 1;
     }
     
     public int getSarsiQuantity() {
-        return quantity;
+        return Sarsiquantity;
     }
 
-    public void setSarsiQuantity(int quantity,int bought) {
-    	quantity=50;
-    	this.quantity -= bought;
+    public void setSarsiQuantity(int Sarsiquantity,int bought) {
+    	this.Sarsiquantity -= 1;
     }
 
     public int getCoffeeQuantity() {
-        return quantity;
+        return Coffeequantity;
     }
 
-    public void setCoffeeQuantity(int quantity,int bought) {
-    	quantity=50;
-    	this.quantity -= bought;
+    public void setCoffeeQuantity(int Coffeequantity,int bought) {
+    	this.Coffeequantity -= 1;
     }
 
     
