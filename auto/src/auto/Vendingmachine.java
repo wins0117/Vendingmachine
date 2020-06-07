@@ -1,4 +1,4 @@
-package auto; 
+package auto;
 import java.io.BufferedReader; 
 import java.io.IOException; 
 import java.io.InputStreamReader; 
@@ -6,6 +6,7 @@ import java.util.Scanner;
 public class Vendingmachine { 
 	
 	static String drink[][]={{"礦泉水","10"},{"红茶","15"},{"綠茶","15"},{"可樂","20"},{"沙士","20"},{"咖啡","30"}};
+
 	Drink bottleWater = new Drink("礦泉水",10,20);
 	Drink redTea = new Drink("紅茶",15,20);
 	Drink greanTea = new Drink("綠茶",15,20);
@@ -31,7 +32,7 @@ public class Vendingmachine {
 	  	
 	  	
 	  	
-	  }
+
 
 	
 	

@@ -1,3 +1,4 @@
+
 package auto;
 
 public class Coin {
@@ -17,4 +18,3 @@ public class Coin {
         this.totalmoney = money;
     }
     
-}

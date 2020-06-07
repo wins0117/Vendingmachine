@@ -82,23 +82,8 @@ Vendingmachine ven = new Vendingmachine();
 
 	public ActionListener ListGame = new ActionListener(){
     public void actionPerformed(ActionEvent e){
-    	// 按重來鈕
-    	/*if(e.getSource() == btnCola){
-          ven.pay(coin.getTotalmoney());
-          lblPlay.setText("請出拳...");
-          lblPlay.setIcon(new ImageIcon(""));
-          lblComp.setText("看誰先贏五次！！");
-          lblComp.setIcon(new ImageIcon(""));
-          lblTotalmoney.setText("玩家贏次數 : 0");
-          lblChange.setText("電腦次數 : 0");
-          lblInputmony.setText("平手次數 : 0");
-          lblResult.setText("輸贏狀態");
-          same_win = 0;  comp_win = 0;  play_win = 0;
-	      btnBottlewater.addActionListener(ListGame);
-	      btnRedtea.addActionListener(ListGame);
-	      btnGreentea.addActionListener(ListGame);
-       }*/
-        // 按剪刀鈕bottleWater
+    	
+        // 只完成礦泉水
        if(e.getSource() == btnBottlewater){
          int charge = ven.pay(coin.getTotalmoney(),"礦泉水") ; 
          if( charge != -1 ){
