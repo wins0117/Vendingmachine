@@ -27,6 +27,7 @@ public class Drink {
     }
 
     public void setBottlewaterQuantity(int quantity,int bought) {
+    	quantity=50;
     	this.quantity -= bought;
     }
     
@@ -35,6 +36,7 @@ public class Drink {
     }
 
     public void setRedteaQuantity(int quantity,int bought) {
+    	quantity=50;
     	this.quantity -= bought;
     }
     
@@ -43,6 +45,7 @@ public class Drink {
     }
 
     public void setGreenteaQuantity(int quantity,int bought) {
+    	quantity=50;
     	this.quantity -= bought;
     }
     
@@ -51,6 +54,7 @@ public class Drink {
     }
 
     public void setColaQuantity(int quantity,int bought) {
+    	quantity=50;
     	this.quantity -= bought;
     }
     
@@ -59,6 +63,7 @@ public class Drink {
     }
 
     public void setSarsiQuantity(int quantity,int bought) {
+    	quantity=50;
     	this.quantity -= bought;
     }
 
@@ -67,6 +72,7 @@ public class Drink {
     }
 
     public void setCoffeeQuantity(int quantity,int bought) {
+    	quantity=50;
     	this.quantity -= bought;
     }
 
