@@ -4,6 +4,7 @@ public class Drink {
     private String name;
     private int price;
     private int quantity;
+    
 
     public String getName() {
         return name;
@@ -13,62 +14,18 @@ public class Drink {
         return price;
     }
 
-    public void setPrice(int price) {
-        this.price = price;
+    public int getQuantity() {
+        return quantity;
     }
-
-    public void setName(String name) {
+    public Drink(String name,int price, int quantity){
         this.name = name;
+        this.price = price ;
+        this.quantity = quantity;
+    }
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
     }
     
-
-    public int getBottlewaterQuantity() {
-        return quantity;
-    }
-
-    public void setBottlewaterQuantity(int quantity,int bought) {
-    	this.quantity -= bought;
-    }
-    
-    public int getRedteaQuantity() {
-        return quantity;
-    }
-
-    public void setRedteaQuantity(int quantity,int bought) {
-    	this.quantity -= bought;
-    }
-    
-    public int getGreenteaQuantity() {
-        return quantity;
-    }
-
-    public void setGreenteaQuantity(int quantity,int bought) {
-    	this.quantity -= bought;
-    }
-    
-    public int getColaQuantity() {
-        return quantity;
-    }
-
-    public void setColaQuantity(int quantity,int bought) {
-    	this.quantity -= bought;
-    }
-    
-    public int getSarsiQuantity() {
-        return quantity;
-    }
-
-    public void setSarsiQuantity(int quantity,int bought) {
-    	this.quantity -= bought;
-    }
-
-    public int getCoffeeQuantity() {
-        return quantity;
-    }
-
-    public void setCoffeeQuantity(int quantity,int bought) {
-    	this.quantity -= bought;
-    }
 
     
 }

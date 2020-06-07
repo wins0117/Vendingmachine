@@ -12,5 +12,9 @@ public class Coin {
     public void setTotalmoney(int totalmoney,int coin) {
         this.totalmoney += coin;
     }
+
+    public void charge(int money){
+        this.totalmoney = money;
+    }
     
 }

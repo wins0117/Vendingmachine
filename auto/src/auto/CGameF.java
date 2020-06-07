@@ -22,7 +22,7 @@ class CGameF extends JFrame {
   private JButton btnFivedollar = new JButton("5元");
   private JButton btnTendollar = new JButton("10元");
 Coin coin = new Coin();
-Drink drink = new Drink();
+
 Vendingmachine ven = new Vendingmachine();
   public CGameF()  {
     //副標
@@ -83,7 +83,7 @@ Vendingmachine ven = new Vendingmachine();
 	public ActionListener ListGame = new ActionListener(){
     public void actionPerformed(ActionEvent e){
     	// 按重來鈕
-    	if(e.getSource() == btnCola){
+    	/*if(e.getSource() == btnCola){
           ven.pay(coin.getTotalmoney());
           lblPlay.setText("請出拳...");
           lblPlay.setIcon(new ImageIcon(""));
@@ -97,13 +97,25 @@ Vendingmachine ven = new Vendingmachine();
 	      btnBottlewater.addActionListener(ListGame);
 	      btnRedtea.addActionListener(ListGame);
 	      btnGreentea.addActionListener(ListGame);
-       }
-        // 按剪刀鈕
+       }*/
+        // 按剪刀鈕bottleWater
        if(e.getSource() == btnBottlewater){
-    	   drink.setBottlewaterQuantity(drink.getBottlewaterQuantity(), 1);
-      	  lblPlay.setText("購買一瓶礦泉水");
-      	  lblPlay.setText("礦泉水剩餘數量 : "+ drink.getBottlewaterQuantity());
+         int charge = ven.pay(coin.getTotalmoney(),"礦泉水") ; 
+         if( charge != -1 ){
+          coin.charge(charge);
+          lblPlay.setText("購買一瓶礦泉水");
+          lblPlay.setText("礦泉水剩餘數量 : "+ ven.bottleWater.getQuantity());
+          lblTotalmoney.setText("使用者金額 : "+ coin.getTotalmoney());
+          lblChange.setText("找零 : " + charge);
+          
+         }
+         else{
+          lblPlay.setText("投入金額不足或存量不足");
+         }
+    	   
+      	  
        }
+       /*
        // 按石頭鈕
        if(e.getSource() == btnRedtea){
     	   drink.setRedteaQuantity(drink.getRedteaQuantity(), 1);
@@ -133,7 +145,7 @@ Vendingmachine ven = new Vendingmachine();
  		  lblPlay.setText("購買一瓶咖啡");
  		  lblPlay.setText("咖啡剩餘數量 : "+ drink.getCoffeeQuantity());
         }
-        
+        */
        if(e.getSource() == btnOnedollar){
          coin.setTotalmoney(coin.getTotalmoney(), 1);
         lblInputmony.setText("投入金額 : 1");

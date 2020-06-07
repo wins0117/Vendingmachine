@@ -1,12 +1,12 @@
 package auto;
 
-import static org.junit.jupiter.api.Assertions.*;
+/*import static org.junit.jupiter.api.Assertions.*;
 
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Test;*/
 
 class VendingmachineTest {
 
-	@Test
+	/*@Test
 	void testVendingmachine() {
 		fail("Not yet implemented");
 	}
@@ -34,6 +34,6 @@ class VendingmachineTest {
 	@Test
 	void testMain() {
 		fail("Not yet implemented");
-	}
+	}*/
 
 }
