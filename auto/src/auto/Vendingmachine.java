@@ -15,15 +15,25 @@ public class Vendingmachine {
 		
 	}
 	
-	void pay(int m){
-
-	  	money=m;
-
-	  	System.out.println("投入金額為："+money);
-
+	public int pay(int totalmoney){
+	  	
+	  	Drink drink = new Drink();
+	  	
+	  	if (totalmoney >=drink.getPrice()){
+	  		
+	  		totalmoney-= drink.getPrice();
+	  	
+		return totalmoney;
+	  	}
+	  	
+	  	else {
+	  		
+	  		return -1;
+	  	}
 	  }
+
 	
-	void show(){
+	public void show(){
 		
 		System.out.println("\n   飲料 \t\t檟格");
 
@@ -39,7 +49,7 @@ public class Vendingmachine {
 		
 	}
 	
-	void choose(){
+	public void choose(){
 
 		int choice; 
 		BufferedReader scanner = new BufferedReader(new InputStreamReader(System.in)); 
@@ -82,13 +92,14 @@ public class Vendingmachine {
 		      }
 	  	}
 	
-	void givechange(){
+	public void givechange(){
 
 		    System.out.println("找回"+money+"元");
 
 		  	money=0;
 		  	
 	}
+	
 	
 	public static void main(String args[]){
 		
