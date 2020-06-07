@@ -1,4 +1,4 @@
-package auto; 
+package auto;
 import java.io.BufferedReader; 
 import java.io.IOException; 
 import java.io.InputStreamReader; 
@@ -18,9 +18,8 @@ public class Vendingmachine {
 	void pay(int m){
 
 	  	money=m;
-
 	  	System.out.println("投入金額為："+money);
-
+		
 	  }
 	
 	void show(){
