@@ -10,11 +10,12 @@ public class Coin {
         return totalmoney;
     }
 
-    public void setTotalmoney(int totalmoney,int coin) {
+    public void insertCoin(int totalmoney,int coin) {
         this.totalmoney += coin;
     }
 
-    public void charge(int money){
+    public void setTotalMoney(int money){
         this.totalmoney = money;
     }
     
+}
